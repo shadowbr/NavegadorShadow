@@ -22,7 +22,7 @@ class Browser extends Region {
     public Browser() {
         getStyleClass().add("browser");
         webEngine.load("https://moodle.canoas.ifrs.edu.br");
-       // webEngine.setUserStyleSheetLocation("css/hack.css");
+        webEngine.setUserStyleSheetLocation(Browser.class.getResource("hack.css").toString());
         getChildren().add(browser);
  
     }
